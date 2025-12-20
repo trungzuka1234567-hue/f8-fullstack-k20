@@ -1,0 +1,33 @@
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 24px;
+}
+.form-grid p {
+    margin: 0;
+}
+
+.form-grid input {
+    width: 100%;
+}
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: rgb(255, 252, 252);
+}
+.submit-btn {
+  background-color: #22c55e; 
+  color: white;              
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 207%;
+}
+
+.text {
+    background-color: white;
+}

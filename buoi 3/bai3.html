@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main2.css" />
+  </head>
+  <body>
+    <h1>Form Login</h1>
+    <form class="login-form">
+      <div class="row">
+        <label>Username:</label>
+        <input type="text" placeholder="Enter Username" />
+      </div>
+      <div class="row">
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" />
+      </div>
+      <div class="row">
+        <label>City of Employment:</label>
+        <input type="text" placeholder="Enter City" />
+      </div>
+      <div class="row">
+        <label>Web server:</label>
+        <select>
+          <option>Choose a server</option>
+          <option>Apache</option>
+          <option>Nginx</option>
+          <option>IIS</option>
+        </select>
+      </div>
+      <div class="form-section">
+        <label class="section-title">Please specify your role:</label>
+        <div class="options">
+          <label><input type="radio" name="role" value="admin" /> Admin</label>
+          <label
+            ><input type="radio" name="role" value="engineer" /> Engineer</label
+          >
+          <label
+            ><input type="radio" name="role" value="manager" /> Manager</label
+          >
+          <label><input type="radio" name="role" value="guest" /> Guest</label>
+        </div>
+
+        <label class="section-title" style="margin-top: 20px"
+          >Single Sign-on to the following:</label
+        >
+        <div class="options">
+          <label><input type="checkbox" name="sso" value="mail" /> Mail</label>
+          <label
+            ><input type="checkbox" name="sso" value="payroll" /> Payroll</label
+          >
+          <label
+            ><input type="checkbox" name="sso" value="self-service" />
+            Self-service</label
+          >
+        </div>
+      </div>
+      <div class="row buttons">
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+    <hr />
+    <h1>Form Contact</h1>
+    <p>Get in touch with us by filling contact form below</p>
+    <form class="contact-form">
+      <div class="name-grid">
+        <input type="text" placeholder="Enter your full name" />
+        <input type="text" placeholder="Enter your full name" />
+        <input type="text" placeholder="Enter your full name" />
+      </div>
+      <textarea rows="5" placeholder="Your message here"></textarea>
+      <div class="contact-footer">
+        <button type="submit">Send message</button>
+        <p>*Please fill all require form field, thanks!</p>
+      </div>
+    </form>
+  </body>
+</html>
