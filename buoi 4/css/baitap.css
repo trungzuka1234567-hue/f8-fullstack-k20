@@ -1,170 +1,139 @@
-/* Reset */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: large;
+    font-family: sans-serif;
+    padding: 20px;
 
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f5f5f5;
-        padding: 20px;
-      }
+}
+.highlight {
+    color:orange;
+}
+.subscribe {
+    background-color: rgb(29, 34, 61);
+    color: white;
+    padding: 40px;
+    border-radius: 9px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.subscribe h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.subscribe-form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.subscribe-form input[type="email"] {
+    padding: 10px 17px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.subscribe :hover input{
+    background: rgb(207, 206, 206);
+}
+.subscribe :hover input::placeholder {
+    color: rgb(9, 10, 10);
+}
+.subscribe-form button[type="submit"]  {
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    padding: 9px 11px;
+    width: 174px;
+    transition: 0.3s;
+}
+.subscribe :hover button {
+    background: rgb(253, 253, 253);
+    color: orange;
+}
+.smile-list {
+  list-style: none;
+  padding: 0;
+}
+.smile-list li::before {
+  content: "😊";
+  position: relative;
+  font-size: 24px;
+}
+.custom-quote {
+    background: rgb(230, 224, 224);
+    padding: 40px 60px;
+    font-style: italic;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.smile-list li:hover::before{
+     content: "😄";
+}
+.custom-quote::before {
+    content: "“";
+    width: 30px;
+    height: 30px;
 
-      /* ===== FORM SUBSCRIBE ===== */
-      .subscribe-section {
-        background-color: #1a2b6d;
-        color: #fff;
-        padding: 40px;
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 40px;
-      }
+    background-color: aliceblue;
+    border-radius: 50%;
 
-      .subscribe-section h2 {
-        font-size: 28px;
-        margin-bottom: 10px;
-      }
+    position: absolute;
+    left: 20px;
+    top: 10px;
 
-      .subscribe-section p {
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      .subscribe-form {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
+    font-size: 30px;
+    color: black;
+}
 
-      .subscribe-form input[type="email"] {
-        padding: 12px 16px;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        width: 250px;
-        transition: all 0.3s ease;
-      }
+.custom-quote::after {
+  content: "”";
+  width: 30px;
+  height: 30px;
+  
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
 
-      .subscribe-form button {
-        background-color: #f4c542;
-        color: #000;
-        border: none;
-        padding: 12px 20px;
-        border-radius: 4px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-      .subscribe-section:hover input[type="email"]::placeholder {
-        color: #f4c542;
-      }
+  font-size: 30px;
+  color: black;
 
-      .subscribe-section:hover input[type="email"] {
-        background-color: #ddd;
-      }
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+h2 {
+    color: rgb(38, 38, 130);
+}
+.code-chip {
+    display: inline-block;
+    background-color: gray;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-      .subscribe-section:hover button {
-        background-color: #f4c542;
-        color: #fff;
-      }
+}
+.box {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
-      /* ===== CUSTOM BLOCKQUOTE ===== */
-      blockquote.custom {
-        position: relative;
-        background-color: #fff;
-        padding: 40px 60px;
-        font-style: italic;
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 40px;
-      }
 
-      blockquote.custom::before,
-      blockquote.custom::after {
-        content: "“";
-        font-size: 40px;
-        color: #ccc;
-        position: absolute;
-        top: 20px;
-      }
 
-      blockquote.custom::before {
-        left: 20px;
-      }
-
-      blockquote.custom::after {
-        content: "”";
-        right: 20px;
-      }
-
-      /* ===== CUSTOM LIST ===== */
-      ul.custom-list {
-        list-style: none;
-        padding-left: 0;
-        margin-bottom: 40px;
-      }
-
-      ul.custom-list li {
-        padding: 10px 0;
-        position: relative;
-        padding-left: 30px;
-      }
-
-      ul.custom-list li::before {
-        content: "✔";
-        position: absolute;
-        left: 0;
-        color: #1a2b6d;
-        font-weight: bold;
-      }
-
-      /* ===== CONTENT SECTION ===== */
-      .content-section {
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 8px;
-      }
-
-      .content-section h3 {
-        margin-bottom: 10px;
-        color: #333;
-      }
-
-      .content-section p {
-        margin-bottom: 15px;
-      }
-
-      .content-section a {
-        color: #1a2b6d;
-        text-decoration: underline;
-      }
-
-      .promo-box {
-        background-color: #eef;
-        padding: 20px;
-        border-radius: 6px;
-        margin-top: 20px;
-      }
-
-      .promo-box a {
-        font-weight: bold;
-        color: #0077cc;
-      }
-      /* Code chip highlight */
-      .code-chip {
-        display: inline-block;
-        background-color: #eee; /* xám nhạt */
-        color: #333;
-        border: 1px solid #ddd; /* viền xám */
-        border-radius: 6px; /* bo góc */
-        padding: 2px 8px; /* khoảng đệm */
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
-        font-size: 0.95em;
-        line-height: 1.8;
-        vertical-align: baseline;
-      }
