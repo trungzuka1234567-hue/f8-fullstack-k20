@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: aliceblue;
+}
+.Dichvu {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background: white;
+}
+.Dichvu h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 10px;
+}
+.Mota {
+    font-size: 15px;
+    color: black;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+.danhsachdichvu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.cacmucdichvu {
+    width: 320px;
+    background: white;
+    padding: 40px 30px;
+    box-shadow: 0 0 9px rgb(133, 131, 131);
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+}
+.cacmucdichvu .icon{
+    width: 90px;
+    height: 90px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.cacmucdichvu h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.cacmucdichvu p{
+    font-size: 14px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.icon img{
+    width: 50%;
+    height: auto;
+}
+.nut{
+    display: inline-block;
+    padding: 12px 30px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin-top: auto;
+}
+.nut:hover {
+    background-color: #91692d;
+}
+.cacmucdichvu .icon img {
+    width: 50%;
+    height: auto;
+    filter: invert(60%) sepia(80%) saturate(500%) hue-rotate(350deg);
+}
